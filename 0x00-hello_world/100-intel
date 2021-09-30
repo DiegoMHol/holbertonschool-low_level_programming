@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc .intel_syntax -S $CFILE 
+gcc masm=intel -S $CFILE 
