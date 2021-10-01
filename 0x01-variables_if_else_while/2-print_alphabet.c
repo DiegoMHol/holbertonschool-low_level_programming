@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
 *main -Alfhabet print
 *return: 0
 */
