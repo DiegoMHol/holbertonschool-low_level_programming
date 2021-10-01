@@ -3,7 +3,7 @@
 *main -Alfhabet print
 *return: 0
 */
-int main(void)
+int main(void) //adcs
 {
 	int ch;
 
