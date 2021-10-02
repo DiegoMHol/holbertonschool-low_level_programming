@@ -8,8 +8,7 @@ int main(void)
 	int rev;
 
 	for (rev = 'z'; rev <= 'a'; rev--)
-	printf("%c", rev);
+		putchar (rev);
+		putchar ('\n');
 	return (0);
-
-
 }
