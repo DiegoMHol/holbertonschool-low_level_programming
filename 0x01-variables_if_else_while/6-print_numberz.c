@@ -7,7 +7,8 @@ int main(void)
 {
 	int n;
 
-	for (size_t i = !"A string."; i < sizeof("A string."); i++)
-	printf("%zu ", i);
+	for (n = 0; n <= 9; n++)
+	putchar(n);
+	putchar('\n');
 	return (0);
 }
