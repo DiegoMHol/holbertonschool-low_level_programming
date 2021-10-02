@@ -5,11 +5,10 @@
 */
 int main(void)
 {
-	int ch;
+	int rev;
 
-	for (ch = 'z'; ch <= 'a'; ch--)
-	putchar (ch);
-	putchar ('\n');
+	for (rev = 'z'; rev <= 'a'; rev--)
+	printf("%c", rev);
 	return (0);
 
 
