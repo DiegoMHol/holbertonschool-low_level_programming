@@ -1,6 +1,7 @@
 #include "main.h"
 /**
 *_islower -lower character
+*@c: The character to print
 *Return: 0
 */
 int _islower(int c)
