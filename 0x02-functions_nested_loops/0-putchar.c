@@ -1,16 +1,18 @@
-#include <unistd.h>
 #include "main.h"
-#include <stdio.h>
 /**
-*main -print _putchar
+*_putchar -print _putchar
 *Return: 0
+*@c: The character to print
 */
 int main(void)
 {
-	char _putchar[] = "_putchar";
+	char *var = "_putchar";
 
-	for (int i = 0; i < 8; ++i)
-	_putchar(_putchar);
+	while (*var)
+	{
+		_putchar(*var);
+		var++;
+	}
 	_putchar('\n');
 	return (0);
 }
