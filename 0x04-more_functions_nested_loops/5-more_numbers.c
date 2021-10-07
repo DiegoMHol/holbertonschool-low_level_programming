@@ -5,11 +5,12 @@
 */
 void more_numbers(void)
 {
-	int vue, n;
+	int vue, n, c;
 
+	c = 14;
 	for (vue = '0'; vue <= '9'; vue++)
 	{
-		for (n = '0'; n <= '9'; n++)
+		for (n = '0'; n <= c; n++)
 			_putchar(n);
 		_putchar('\n');
 	}
