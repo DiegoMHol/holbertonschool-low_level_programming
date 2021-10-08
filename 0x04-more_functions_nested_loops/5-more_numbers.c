@@ -5,13 +5,18 @@
 */
 void more_numbers(void)
 {
-	int vue, n, c;
+	int vue, n;
 
-	c = 14;
-	for (vue = '0'; vue <= '9'; vue++)
+	for (vue = 0; vue < 10; vue++)
 	{
-		for (n = '0'; n <= c; n++)
-			_putchar(n);
-		_putchar('\n');
+		for (n = 0; n <= 14; n++)
+		{
+			if (n >= 10)
+			{
+			_putchar('0' + n / 10);
+			}
+		_putchar('0' + n % 10);
+	}
+	_putchar('\n');	
 	}
 }
