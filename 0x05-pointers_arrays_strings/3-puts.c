@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 /**
 *_puts -print a string
 *@str: char str
@@ -8,6 +7,8 @@
 void _puts(char *str)
 {
 	while (*str)
-_putchar(*str++);
-_putchar('\n');
+	{
+	_putchar(*str++);
+	}
+	_putchar('\n');
 }
