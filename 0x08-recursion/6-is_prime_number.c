@@ -7,14 +7,15 @@
 */
 int prime(int n, int count)
 {
-	if (n == count)
-		return (1);
-	if ((n % count) != 0)
+	if (count == 1)
 	{
-		return (prime(n, count + 1));
+		return (1);
 	}
-	else
+	if (n % count == 0)
+	{
 		return (0);
+	}
+	return (prime(n, count - 1));
 }
 /**
 *is_prime_number -prime number
@@ -23,9 +24,7 @@ int prime(int n, int count)
 */
 int is_prime_number(int n)
 {
-	int count = 0;
-
-	if (n == 1 && n == -1)
+	if (n <= 1)
 		return (0);
-	return (prime(n, count));
+	return (prime(n, n / 2));
 }
