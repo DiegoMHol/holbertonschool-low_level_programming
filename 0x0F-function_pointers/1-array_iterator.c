@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
-*array_interator -entry
+*array_iterator -entry
 *@array: int
 *@size: size_t
 *@action: action
