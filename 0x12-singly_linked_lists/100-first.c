@@ -1,5 +1,5 @@
 #include <stdio.h>
-void printFun (void) __attribute__ ((constructor));
+void printFun(void) __attribute__((constructor));
 /**
 *printFun -print
 */
