@@ -2,7 +2,7 @@
 /**
 *read_textfile -Read a text and print it to POSIX
 *@filename: File to be read and print
-*@letters: num of letters to read and print
+*@letters: num of letters to read an print
 *Return: 0
 */
 ssize_t read_textfile(const char *filename, size_t letters)
