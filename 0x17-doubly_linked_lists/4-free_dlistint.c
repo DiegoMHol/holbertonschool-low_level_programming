@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *free_dlistint
+ *free_dlistint -free list
  *@head: point
  */
 void free_dlistint(dlistint_t *head)
