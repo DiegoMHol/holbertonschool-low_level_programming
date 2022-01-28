@@ -21,10 +21,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 			return (NULL);
 		}
 		new->size = size;
-		new->array = calloc(size, sizeof(hash_node_t));
+		new->array = malloc(sizeof(hash_node_t *) * size);
 		if (new->array == NULL)
 		{
-			free(new);
+			free(new->array);
 			return (NULL);
 		}
 		return (new);
