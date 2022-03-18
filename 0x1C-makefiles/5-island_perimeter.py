@@ -1,17 +1,17 @@
 #!/usr/bin/python3
-""" Perimeter island """
+""" Island perimetre """
 
 
 def island_perimeter(grid):
-    """ Perimreter island """
-    m, n = len(grid), len(grid[0])
-    land, nei = 0, 0
-    for i in range(m):
-        for j in range(n):
-            if grid[i][j] == 1:
-                land += 1
-                if i < m - 1 and grid[i + 1][j] == 1:
-                    nei += 1
-                    if j < n - 1 and grid[i][j + 1] == 1:
-                        nei += 1
-        return land*4 - 2*nei
+    """ Isle Perimeter """
+    cx, cy = 0, 0
+    len_grid = len(grid)
+    for x in range(len_grid):
+        for y in range(len(grid[x])):
+            if grid[x][y] == 1:
+                cx += 1
+                if (y != len(grid[x]) - 1 and grid[x][y + 1] == 1):
+                    cy += 1
+                if (x != len(grid) - 1 and grid[x + 1][y] == 1):
+                    cy += 1
+    return 4 * cx - 2 * cy
