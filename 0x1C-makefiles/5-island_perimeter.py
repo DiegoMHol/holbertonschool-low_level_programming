@@ -1,4 +1,9 @@
+#!/usr/bin/python3
+""" Perimeter island """
+
+
 def island_perimeter(grid):
+    """ Perimreter island """
         m,n=len(grid), len(grid[0])
         land, nei=0,0
         for i in range(m):
