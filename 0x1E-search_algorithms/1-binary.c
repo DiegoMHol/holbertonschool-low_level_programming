@@ -42,7 +42,7 @@ int binary_search(int *array, size_t size, int value)
 		{
 			left = med + 1;
 			if (right >= 1)
-				printFunc(array + left ,right + 1 - left);
+				printFunc(array + left, right + 1 - left);
 		}
 		else if (value < array[med])
 		{
